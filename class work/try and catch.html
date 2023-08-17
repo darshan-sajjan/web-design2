@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>try and catch</title>
+</head>
+<body>
+    <button onclick="test()">click me</button>
+    <div id="result"></div>
+</body>
+<script type="text/javascript">
+    function test() {
+        try{
+            document.write("hello");
+        }
+        catch(error){
+            document.getElementById("result").innerText=error;
+        }
+    }
+</script>
+</html>

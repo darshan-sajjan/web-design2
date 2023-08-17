@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date tag</title>
+</head>
+<body>
+    <h1 id="result"></h1>
+    <button onclick="getdate()">get date</button>
+    <button onclick="fullyear()">full year</button>
+    <button onclick="month()">month</button>
+    <button onclick="todate()">Date</button>
+    <button onclick="hours()">hours</button>
+    <button onclick="minutes()">minutes</button>
+    <button onclick="second()">second</button>
+    <button onclick="milisecond()">milisecond</button>
+    <button onclick="time()">time</button>
+    <button onclick="day()">day</button>
+</body>
+<script type="text/javascript">
+    var date = new Date();
+    function getdate() {
+        document.getElementById("result").innerHTML=date;
+    }
+    function fullyear() {
+        document.getElementById("result").innerHTML=date.getFullYear();
+    }
+    function month() {
+        var month = ["january","february","march","april","may","june","july",
+    "august","september","october","november","december"];
+        document.getElementById("result").innerHTML=month[date.getMonth()];
+    }
+    function todate() {
+        document.getElementById("result").innerHTML=date.getDate();
+    }
+    function hours() {
+        document.getElementById("result").innerHTML=date.getHours();
+    }
+    function minutes() {
+        document.getElementById("result").innerHTML=date.getMinutes();
+    }
+    function second() {
+        document.getElementById("result").innerHTML=date.getSeconds();
+    }
+    function milisecond() {
+        document.getElementById("result").innerHTML=date.getMilliseconds();
+    }
+    function time() {
+        document.getElementById("result").innerHTML=date.getTime();
+    }
+    function day() {
+        document.getElementById("result").innerHTML=date.getDay();
+    }
+</script>
+</html>

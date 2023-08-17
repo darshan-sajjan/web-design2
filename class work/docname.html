@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>name</title>
+</head>
+<body>
+    <input type="text" name="darshan">
+    <button onclick="mango()">submit</button>
+    <h1></h1>
+</body>
+<script type="text/javascript">
+    function mango() {
+        var a = document.getElementsByName("darshan")[0].value;
+        document.getElementsByName("darshan")[0].value="";
+        document.getElementsByTagName("h1")[0].innerHTML=a;
+    }
+</script>
+</html>

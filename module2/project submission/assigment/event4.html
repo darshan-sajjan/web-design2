@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>clear interval</title>
+</head>
+<body>
+    <h1 id="darshan"></h1>
+    <button onclick="stop()">stop</button>
+</body>
+<script type="text/javascript">
+    var my = setInterval(count,1000)
+    var c = 0;
+    function count() {
+        document.getElementById("darshan").innerText=c;
+        c++;
+    }
+    function stop() {
+        clearInterval(my);
+    }
+</script>
+</html>

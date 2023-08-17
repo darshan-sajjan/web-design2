@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>for each loop</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    var cars=["car1","car2","car3","car4","car5"];
+    cars.forEach(car);
+    function car(item,index,Array){
+        //document.write(index+"=>"+item +"<br/>");
+        Array[index]=item+"0";
+    }
+    cars.forEach(after);
+    function after(item,index){
+        document.write(index+" => "+item+" <br/> ");
+    }
+</script>
+</html>

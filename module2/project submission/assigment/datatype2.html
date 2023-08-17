@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>array</title>
+        <h1 id="result"></h1>
+        <button onclick="bus()">pop</button>
+        <button onclick="car()">push</button>
+        <button onclick="van()">slice</button>
+        <button onclick="jeep()">reverse</button>
+        <button onclick="bike()">shift</button>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        var fruits = ["mango","apple","orange","pineapple"];
+        var demo = fruits;
+        document.getElementById("result").innerText = demo;
+        function bus() {
+            demo.pop();
+            document.getElementById("result").innerText = demo;
+        }
+        function car() {
+            var a = prompt("please enter a fruit","");
+            demo.push(a);
+            document.getElementById("result").innerText = demo;
+        }
+        function van() {
+            var x = demo.slice(2);
+            document.getElementById("result").innerText = x;
+        }
+        function jeep() {
+            demo.reverse();
+            document.getElementById("result").innerText = demo;
+        }
+        function bike() {
+            var x = demo.shift();
+            document.getElementById("result").innerText = x;
+        }
+    </script>
+</html>

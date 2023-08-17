@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>throw and finally</title>
+</head>
+<body>
+    please enter a number between 5 and 10
+    <br>
+    <input type="text" id="num">
+    <button onclick="test()">click me</button>
+    <h1 id="result"></h1>
+</body>
+<script type="text/javascript">
+    var food = document.getElementById("num");
+    function test() {
+        var data = food.value;
+        try{
+            if(isNaN(data)){
+                throw "it is not a number";
+            }
+            else{
+                if(data<5 || data>10){
+                    throw "out of range";
+                }
+                else{
+                    throw "";
+                }
+            }
+        }
+        catch(error){
+            document.getElementById("result").innerText=error;
+        }
+        finally{
+            food.value = "";
+        }
+    }
+</script>
+</html>

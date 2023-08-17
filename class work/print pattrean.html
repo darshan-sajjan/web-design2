@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>print pattrean</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    var rows = prompt("please enter the number");
+    printpattrean(rows);
+    function printpattrean(book){
+        for(var i=1;i<=rows;i++){
+            for(var j = 1;j<=i;j++){
+                document.write("*");
+            }
+            document.write("</br>")
+        }
+        for(var i=rows;i>=1;i--){
+            for(var j = 1;j<=i;j++){
+                document.write("*");
+            }
+            document.write("</br>")
+        }
+    }
+</script>
+</html>

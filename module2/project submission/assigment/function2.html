@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html >
+<head>  
+    <title>Document</title>
+</head>
+<body>
+    <input type="" name="darshan" >
+    <button onclick="getname()">submit</button>
+    <h1></h1>
+</body>
+<script>
+    function getname() {
+        var bidar = document.getElementsByName("darshan")[0].value;
+        document.getElementsByName("darshan")[0].value="";
+        document.getElementsByTagName("h1")[0].innerHTML = bidar;
+    }
+</script>
+</html>

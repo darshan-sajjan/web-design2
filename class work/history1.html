@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html >
+<head>
+        <title>history 1</title>
+</head>
+<body>
+    <h1></h1>
+    <h2>first</h2>
+    <button onclick="window.history.forward();">forward</button>
+    <button onclick="window.history.back();">back</button>
+    <button onclick="window.history.go(2);">go</button>
+</body>
+<script type="text/javascript">
+    var c = window.history.length;
+    document.getElementsByTagName("h1")[0].innerText=c;
+</script>
+</html>

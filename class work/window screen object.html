@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>math</title>
+</head>
+<body>
+    <button onclick="getotp()">OTP</button>
+</body>
+<script type="text/javascript">
+    function getotp() {
+        var a = Math.random()*10000;
+        alert(a);
+        var b = Math.floor(a);
+        document.write(b);
+    }
+</script>
+</html>

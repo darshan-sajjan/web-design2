@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    font-family: verdana;
+    border: border-box;
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+}
+
+.bigbazar-logo{
+    height: 50px;
+    width: 100px;
+}
+
+.logo{
+    background-image: url("big\ bazar\ logo.jpg");
+    height: 50px;
+    width: 100%;
+    background-size: cover;
+    margin-left: 20px;
+}
+.border{
+    border: 2px solid transparent;
+} 
+.border.hover{
+    border: 2px solid white;
+}

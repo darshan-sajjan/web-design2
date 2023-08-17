@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>print</title>
+    
+</head>
+<body id="body">
+    <center>
+    <div>
+        <img src="1.jpg" width="500px">
+    </div>
+    <h1>printable data</h1>
+    <p id="data">
+     veritatis   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae blanditiis delectus ab consequatur ipsum saepe repellat distinctio impedit. Incidunt voluptatum ad soluta nostrum aperiam sequi praesentium est  a.veritatis   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae blanditiis delectus ab consequatur ipsum saepe repellat distinctio impedit. Incidunt voluptatum ad soluta nostrum aperiam sequi praesentium est  a.veritatis   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae blanditiis delectus ab consequatur ipsum saepe repellat distinctio impedit. Incidunt voluptatum ad soluta nostrum aperiam sequi praesentium est  a.veritatis   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae blanditiis delectus ab consequatur ipsum saepe repellat distinctio impedit. Incidunt voluptatum ad soluta nostrum aperiam sequi praesentium est  a.
+    </p>
+    <button onclick="printpage()">print content</button>
+    <p>
+        veritatis   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae blanditiis delectus ab consequatur ipsum saepe repellat distinctio impedit. Incidunt voluptatum ad soluta nostrum aperiam sequi praesentium est  a.veritatis   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae blanditiis delectus ab consequatur ipsum saepe repellat distinctio impedit. Incidunt voluptatum ad soluta nostrum aperiam sequi praesentium est  a.veritatis   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae blanditiis delectus ab consequatur ipsum saepe repellat distinctio impedit. Incidunt voluptatum ad soluta nostrum aperiam sequi praesentium est  a.veritatis   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae blanditiis delectus ab consequatur ipsum saepe repellat distinctio impedit. Incidunt voluptatum ad soluta nostrum aperiam sequi praesentium est  a.
+       </p>
+</center>
+</body>
+<script type="text/javascript">
+    function printpage() {
+        var  body = document.getElementById("body").innerHTML;
+        var data = document.getElementById("data").innerHTML;
+        document.getElementById("body").innerHTML = data;
+        window.print();
+        document.getElementById("body").innerHTML = body;
+    }
+</script>
+</html>

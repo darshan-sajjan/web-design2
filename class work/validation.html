@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>number validation</title>
+</head>
+<body>
+    please enter your number
+    <br>
+    <input type="text" onkeyup="darshan(this)">
+    <div id="result"></div>
+</body>
+<script type="text/javascript">
+    document.getElementById("result").style.color = "red";
+    function darshan(ABC) {
+        if (isNaN(ABC.value)) {
+            document.getElementById("result").innerText = "please enter number only";
+        }
+        else{
+            document.getElementById("result").innerText="";
+            if (ABC.value.length>=10) {
+                document.getElementById("result").innerText="please enter only ten digits";
+            }
+            else{
+                document.getElementById("result").innerText="";
+            }
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>clear time out</title>
+</head>
+<body>
+    <button onclick="start()">start</button>
+    <button onclick="stop()">stop</button>
+</body>
+<script type="text/javascript">
+     var my;
+     function start() {
+        my = setTimeout(
+            function() {
+                document.write("<h1>wel come to banglore</h1>");
+            },
+            2000
+        )
+     }
+     function stop() {
+        clearTimeout(my)
+        alert("time out stop");
+     }
+</script>
+</html>

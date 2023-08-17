@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>this keyword</title>
+</head>
+<body>
+    <!-- <button onclick="this.style.display='none'">click me to hide</button> -->
+    <!-- <button onclick="move(this)">click me to hide</button> -->
+</body>
+<script type="text/javascript">
+    // function move(darshan){
+    //     darshan.style.display = "none";
+    // }
+    var a = {
+        firstname : "darshan",
+        secondname : "sajjan",
+        fullname : function() {
+            return this.firstname + this.secondname;
+        }
+    };
+    document.write("<h1>"+a.fullname());
+</script>
+</html>

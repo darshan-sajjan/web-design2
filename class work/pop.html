@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pop</title>
+    <h1 id="result"></h1>
+    <button onclick="pop()">pop</button>
+    <button onclick="push()">PUSH</button>
+    <button onclick="slice()">slice</button>
+    <button onclick="reverse()">reverse</button>
+    <button onclick="shift()">shift</button>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    var fruits = ["apple","banana","mango","pineapple"];
+    var food = fruits;
+    document.getElementById("result").innerHTML=food;
+    function pop() {
+        fruits.pop();
+        document.getElementById("result").innerHTML=food;
+    }
+    function push() {
+        var a = prompt("please enter a fruit name","");
+        fruits.push(a);
+        document.getElementById("result").innerHTML=food;
+    }
+    function slice() {
+        var x = fruits.slice(2);
+        document.getElementById("result").innerHTML=x;
+    }
+    function reverse() {
+        fruits.reverse();
+        document.getElementById("result").innerHTML=fruits;
+    }
+    function shift() {
+        var s = fruits.shift();
+        document.getElementById("result").innerHTML=s;
+    }
+</script>
+</html>

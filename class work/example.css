@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.sun{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 165, 0, 0.5);
+    position: absolute;
+    border-radius: 50%;
+    top: 30px;
+    left: -15px;
+    overflow: hidden;
+    animation: sun 3s ease-out;
+    animation-delay: 2s;
+}
+.main1{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    top: 20px;
+    left: -20px;
+    opacity: 0.5;
+    animation: main1 5s linear;
+}
+.main2{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    top: 60px;
+    left: 300px;
+    opacity: 0.8;
+    animation: main2 2.5s ease-in;
+    animation-delay: 2.5s;
+}
+.main3{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    top: 100px;
+    right: 0px;
+    opacity: 0.8;
+    animation: main3 4s ease-in-out;
+    animation-delay: 1s;
+}
+@keyframes main1{
+    from{
+        top: 20px;
+        left: -20px;
+    }
+    to{
+        top: 20px;
+        left: 110%;
+    }
+}
+@keyframes main2{
+    from{
+        top: 60px;
+        left: 300px;
+    }
+    to{
+        top: 60px;
+        left: 110%;
+    }
+}
+@keyframes main3{
+    from{
+        top: 100px;
+        right: 0px;
+    }
+    to{
+        top: 60px;
+        right:110%;
+    }
+}
+@keyframes sun{
+    from{
+        top: 30px;
+        left: -15px; 
+        background-color: rgba(255, 165, 0, 0.5);
+    }
+    to{
+        top: 10px;
+        left: 110%;
+        background-color: rgba(255, 165, 0, 1);
+    }
+}
+

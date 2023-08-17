@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>dom open and close</title>
+</head>
+<body>
+    <button onclick="winopen()">open</button>
+    <button onclick="winclose()">close</button>
+</body>
+<script type="text/javascript">
+    var win;
+    var win2;
+    function winopen() {
+        win = window.open();
+        win2 = window.open('https://www.youtube.com/',"width=500px","height=500px");
+    }
+    function winclose(){
+        win.close();
+        win2.close();
+    }
+</script>
+</html>

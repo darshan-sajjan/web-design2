@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>modify</title>
+    <style type="text/css">
+        #main{
+            color: red;
+            font-size: 50px;
+            text-align: center;
+            margin-top: 100px;
+            cursor: pointer;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" onmouseenter="modify()" onmouseleave="unmodify()">
+        wel come to banglore
+    </div>
+</body>
+<script type="text/javascript">
+    function modify() {
+        document.getElementById("main").style.fontSize="100px";
+        document.getElementById("main").style.color="blue";
+        document.getElementById("main").style.fontFamily="verdana";
+
+    }
+    function unmodify() {
+        document.getElementById("main").style.fontSize="50px";
+        document.getElementById("main").style.color="red";
+        document.getElementById("main").style.fontFamily="";
+    }
+</script>
+</html>
